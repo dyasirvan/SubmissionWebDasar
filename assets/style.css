@@ -7,48 +7,12 @@ body {
     padding: 0;
 }
 
-#judul{
-    font-size: 30px;
-    padding: 50px;
-    background-color: #2196F3;  
-    text-align: center;
-}
-
-#judul>h2{
-    color: whitesmoke;
-}
-
 nav {
     background-color: #1976D2;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
-/*
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1976D2;
-  }
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
-}
-
-.active, nav a:hover { */
-    /* font-weight: bold; */
-    /* background-color: white;
-    color: #1976D2;
-} */
 
 ul {
     list-style-type: none;
@@ -71,11 +35,15 @@ ul {
     text-decoration: none;
   }
   
-  .active, li a:hover {
+  li a:hover {
     background-color: white;
     color: #1976D2;
   }
 
+  ul li.active a{
+    background: white;
+    color: #1976D2;
+  }
   #li-home{
       padding-left: 20px;
   }
@@ -84,6 +52,12 @@ ul {
 main{
     padding: 20px;
     overflow: auto;
+}
+
+h1 {
+    color: #1976D2;
+    font-weight: 800;
+    font-size: xx-large;
 }
 
 h2 {
@@ -121,7 +95,7 @@ h3 {
 }
 
 .bio-img{
-    height: 250px;
+    height: 170px;
     width: auto;
 }
 
@@ -202,8 +176,8 @@ header {
     }
     
 
-div#slider { overflow: hidden; z-index: 9999;}
-div#slider figure img { width: 20%; float: left; z-index: 9999;}
+div#slider { overflow: hidden;}
+div#slider figure img { width: 20%; float: left;}
 div#slider figure { 
   position: relative;
   width: 500%;
